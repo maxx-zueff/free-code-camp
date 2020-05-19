@@ -178,6 +178,204 @@ export default function Home() {
 	    <pre>{`
 			var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 	    `}</pre>
+	    
+  		<p>Quoting Strings with Single Quotes</p>
+	    <pre>{`
+			var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+	    `}</pre>
+
+  		<p>Escape Sequences in Strings</p>
+	    <pre>{`
+			var myStr= 'FirstLine\n\t\\SecondLine\nThirdLine';
+	    `}</pre>
+
+  		<p>Concatenating Strings with Plus Operator</p>
+	    <pre>{`
+			var myStr = "This is the start. "+"This is the end.";
+	    `}</pre>
+
+  		<p>Concatenating Strings with the Plus Equals Operator</p>
+	    <pre>{`
+			var myStr = "This is the first sentence. ";
+			myStr += "This is the second sentence.";
+	    `}</pre>
+
+  		<p>Constructing Strings with Variables</p>
+	    <pre>{`
+	    	var myName = "Max";
+			var myStr = "My name is " + myName + " and I am well!";
+	    `}</pre>
+
+  		<p>Appending Variables to Strings</p>
+	    <pre>{`
+	    	var someAdjective = "Okay";
+			var myStr = "Learning to code is ";
+			myStr += someAdjective;
+	    `}</pre>
+
+  		<p>Find the Length of a String</p>
+	    <pre>{`
+	    	// Setup
+			var lastNameLength = 0;
+			var lastName = "Lovelace";
+
+			// Only change code below this line
+
+			lastNameLength = lastName.length;
+	    `}</pre>
+
+  		<p>Find the Length of a String</p>
+	    <pre>{`
+	    	// Setup
+			var lastNameLength = 0;
+			var lastName = "Lovelace";
+
+			// Only change code below this line
+
+			lastNameLength = lastName.length;
+	    `}</pre>
+
+  		<p>Use Bracket Notation to Find the First Character in a String</p>
+	    <pre>{`
+	    	// Setup
+			var firstLetterOfLastName = "";
+			var lastName = "Lovelace";
+
+			// Only change code below this line
+			firstLetterOfLastName = lastName[0];
+	    `}</pre>
+
+  		<p>Understand String Immutability</p>
+	    <pre>{`
+			// Setup
+			var myStr = "Jello World";
+
+			// Only change code below this line
+			myStr = "Hello World"; // Change this line
+			// Only change code above this line
+	    `}</pre>
+
+  		<p>Use Bracket Notation to Find the Nth Character in a String</p>
+	    <pre>{`
+			// Setup
+			var lastName = "Lovelace";
+
+			// Only change code below this line
+			var thirdLetterOfLastName = lastName[2]; // Change this line
+	    `}</pre>
+
+  		<p>Use Bracket Notation to Find the Last Character in a String</p>
+	    <pre>{`
+			// Setup
+			var lastName = "Lovelace";
+
+			// Only change code below this line
+			var lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
+	    `}</pre>
+
+  		<p>Use Bracket Notation to Find the Nth-to-Last Character in a String</p>
+	    <pre>{`
+			// Setup
+			var lastName = "Lovelace";
+
+			// Only change code below this line
+			var secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+	    `}</pre>
+
+  		<p>Word Blanks</p>
+	    <pre>{`
+			var myNoun = "dog";
+			var myAdjective = "big";
+			var myVerb = "ran";
+			var myAdverb = "quickly";
+
+			// Only change code below this line
+			var wordBlanks = 
+			  "It was really "
+			  + myAdjective
+			  + " "
+			  + myNoun
+			  + ", and we "
+			  + myVerb
+			  + " ourselves "
+			  + myAdverb;
+	    `}</pre>
+
+  		<p>Store Multiple Values in one Variable using JavaScript Arrays</p>
+	    <pre>{`
+			// Only change code below this line
+			var myArray = ["store", 3990];
+	    `}</pre>
+
+  		<p>Nest one Array within Another Array</p>
+	    <pre>{`
+			var myArray = [[1,2],[1,2]];
+	    `}</pre>
+
+  		<p>Access Array Data with Indexes</p>
+	    <pre>{`
+			// Setup
+			var myArray = [50,60,70];
+
+			// Only change code below this line
+			var myData = myArray[0];
+	    `}</pre>
+
+  		<p>Modify Array Data With Indexes</p>
+	    <pre>{`
+			// Setup
+			var myArray = [18,64,99];
+
+			// Only change code below this line
+			myArray[0] = 45;
+	    `}</pre>
+
+  		<p>Access Multi-Dimensional Arrays With Indexes</p>
+	    <pre>{`
+			// Setup
+			var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+			// Only change code below this line
+			var myData = myArray[2][1];
+	    `}</pre>
+
+  		<p>Manipulate Arrays With push()</p>
+	    <pre>{`
+			// Setup
+			var myArray = [["John", 23], ["cat", 2]];
+
+			// Only change code below this line
+			myArray.push(["dog", 3]);
+	    `}</pre>
+	    
+  		<p>Manipulate Arrays With pop()</p>
+	    <pre>{`
+			// Setup
+			var myArray = [["John", 23], ["cat", 2]];
+
+			// Only change code below this line
+			var removedFromMyArray = myArray.pop();
+	    `}</pre>
+	    
+  		<p>Manipulate Arrays With shift()</p>
+	    <pre>{`
+			// Setup
+			var myArray = [["John", 23], ["dog", 3]];
+
+			// Only change code below this line
+			var removedFromMyArray = myArray.shift();
+	    `}</pre>
+
+  		<p>Manipulate Arrays With unshift()</p>
+	    <pre>{`
+			// Setup
+			var myArray = [["John", 23], ["dog", 3]];
+			myArray.shift();
+			myArray.unshift(["Paul",35]);
+	    `}</pre>
+
+	    
+
 
 
 	</div>
