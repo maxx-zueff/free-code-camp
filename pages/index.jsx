@@ -374,6 +374,300 @@ export default function Home() {
 			myArray.unshift(["Paul",35]);
 	    `}</pre>
 
+  		<p>Shopping List</p>
+	    <pre>{`
+			var myList = [
+			  ["Chocolate Bar", 15],
+			  ["Chocolate Bar", 15],
+			  ["Chocolate Bar", 15],
+			  ["Chocolate Bar", 15],
+			  ["Chocolate Bar", 15]
+			];
+	    `}</pre>
+
+  		<p>Write Reusable JavaScript with Functions</p>
+	    <pre>{`
+			function reusableFunction() {
+			  console.log("Hi World");
+			}
+
+			reusableFunction();
+	    `}</pre>
+
+  		<p>Passing Values to Functions with Arguments</p>
+	    <pre>{`
+			function functionWithArgs(num1, num2) {
+			  console.log(num1 + num2)
+			}
+
+			functionWithArgs(1, 1);
+	    `}</pre>
+
+  		<p>Global Scope and Functions</p>
+	    <pre>{`
+			// Declare the myGlobal variable below this line
+			var myGlobal = 10;
+
+			function fun1() {
+			  // Assign 5 to oopsGlobal Here
+			  oopsGlobal = 5;
+			}
+
+			// Only change code above this line
+
+			function fun2() {
+			  var output = "";
+			  if (typeof myGlobal != "undefined") {
+			    output += "myGlobal: " + myGlobal;
+			  }
+			  if (typeof oopsGlobal != "undefined") {
+			    output += " oopsGlobal: " + oopsGlobal;
+			  }
+			  console.log(output);
+			}
+	    `}</pre>
+
+  		<p>Local Scope and Functions</p>
+	    <pre>{`
+			function myLocalScope() {
+			  'use strict';
+
+			  // Only change code below this line
+			  var myVar = 1;
+			  console.log('inside myLocalScope', myVar);
+			}
+			myLocalScope();
+
+			// Run and check the console
+			// myVar is not defined outside of myLocalScope
+			console.log('outside myLocalScope', myVar);
+	    `}</pre>
+
+  		<p>Global vs. Local Scope in Functions</p>
+	    <pre>{`
+			// Setup
+			var outerWear = "T-Shirt";
+
+			function myOutfit() {
+			  // Only change code below this line
+			  var outerWear = "sweater";
+
+
+			  // Only change code above this line
+			  return outerWear;
+			}
+
+			myOutfit();
+	    `}</pre>
+
+  		<p>Return a Value from a Function with Return</p>
+	    <pre>{`
+	    	function timesFive(num) {
+			  return num * 5;
+			}
+	    `}</pre>
+
+  		<p>Understanding Undefined Value returned from a Function</p>
+	    <pre>{`
+			// Setup
+			var sum = 0;
+
+			function addThree() {
+			  sum = sum + 3;
+			}
+
+			// Only change code below this line
+			function addFive() {
+			  sum += 5;
+			}
+
+			// Only change code above this line
+
+			addThree();
+			addFive();
+	    `}</pre>
+
+  		<p>Assignment with a Returned Value</p>
+	    <pre>{`
+	    	// Setup
+			var processed = 0;
+
+			function processArg(num) {
+			  return (num + 3) / 5;
+			}
+
+			// Only change code below this line
+			processed = processArg(7);
+	    `}</pre>
+
+  		<p>Stand in Line</p>
+	    <pre>{`
+	    	function nextInLine(arr, item) {
+			  // Only change code below this line
+			  arr.push(item);
+			  item = arr[0];
+			  arr.shift();
+			  return item;
+			  // Only change code above this line
+			  
+
+			}
+
+			// Setup
+			var testArr = [1,2,3,4,5];
+
+			// Display code
+			console.log("Before: " + JSON.stringify(testArr));
+			console.log(nextInLine(testArr, 6));
+			console.log("After: " + JSON.stringify(testArr));
+	    `}</pre>
+
+  		<p>Understanding Boolean Values</p>
+	    <pre>{`
+	    	function welcomeToBooleans() {
+
+			  // Only change code below this line
+
+			  return true; // Change this line
+
+			  // Only change code above this line
+			}
+
+	    `}</pre>
+
+  		<p>Use Conditional Logic with If Statements</p>
+	    <pre>{`
+			function trueOrFalse(wasThatTrue) {
+			  // Only change code below this line
+			  if (wasThatTrue) {
+			    return "Yes, that was true";
+			  }
+			  return "No, that was false";
+			}
+	    `}</pre>
+
+  		<p>Comparison with the Equality Operator</p>
+	    <pre>{`
+			// Setup
+			function testEqual(val) {
+			  if (val == 12) { // Change this line
+			    return "Equal";
+			  }
+			  return "Not Equal";
+			}
+			testEqual(10);
+	    `}</pre>
+
+  		<p>Comparison with the Strict Equality Operator</p>
+	    <pre>{`
+			// Setup
+			function testStrict(val) {
+			  if (val === 7) { // Change this line
+			    return "Equal";
+			  }
+			  return "Not Equal";
+			}
+
+			testStrict(10);
+	    `}</pre>
+
+  		<p>Practice comparing different values</p>
+	    <pre>{`
+			// Setup
+			function compareEquality(a, b) {
+			  if (a === b) { // Change this line
+			    return "Equal";
+			  }
+			  return "Not Equal";
+			}
+			compareEquality(10, "10");
+	    `}</pre>
+
+  		<p>Comparison with the Inequality Operator</p>
+	    <pre>{`
+			// Setup
+			function testNotEqual(val) {
+			  if (val != 99) { // Change this line
+			    return "Not Equal";
+			  }
+			  return "Equal";
+			}
+
+			testNotEqual(10);
+	    `}</pre>
+
+  		<p>Comparison with the Greater Than Operator</p>
+	    <pre>{`
+			function testGreaterThan(val) {
+			  if (val > 100) {  // Change this line
+			    return "Over 100"; }
+
+			  if (val > 10) {  // Change this line
+			    return "Over 10"; }
+
+			  return "10 or Under";
+			}
+
+			testGreaterThan(10);
+	    `}</pre>
+
+  		<p>Comparison with the Greater Than Or Equal To Operator</p>
+	    <pre>{`
+			function testGreaterOrEqual(val) {
+			  if (val >= 20) {  // Change this line
+			    return "20 or Over";
+			  }
+
+			  if (val >= 10) {  // Change this line
+			    return "10 or Over";
+			  }
+
+			  return "Less than 10";
+			}
+
+			testGreaterOrEqual(10);
+
+	    `}</pre>
+
+  		<p>Comparison with the Less Than Operator</p>
+	    <pre>{`
+	    	function testLessThan(val) {
+			  if (val < 25) {  // Change this line
+			    return "Under 25";
+			  }
+			  if (val < 55) {  // Change this line
+			    return "Under 55";
+			  }
+			  return "55 or Over";
+			}
+			testLessThan(10);
+	    `}</pre>
+
+  		<p>Comparison with the Less Than Or Equal To Operator</p>
+	    <pre>{`
+			function testLessOrEqual(val) {
+			  if (val <= 12) {  // Change this line
+			    return "Smaller Than or Equal to 12";
+			  }
+			  if (val <= 24) {  // Change this line
+			    return "Smaller Than or Equal to 24";
+			  }
+			  return "More Than 24";
+			}
+			testLessOrEqual(10);
+	    `}</pre>
+
+  		<p>Comparisons with the Logical And Operator</p>
+	    <pre>{`
+			function testLogicalAnd(val) {
+			  if (val <= 50 && val >= 25) {
+			    return "Yes";
+			  }
+			  return "No";
+			}
+			testLogicalAnd(10);
+	    `}</pre>
+
 	    
 
 
